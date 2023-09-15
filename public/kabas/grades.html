@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Grades</title>
+</head>
+<body>
+    <table border="0" cellpadding="5pt">
+        <tr>
+          <td valign="top">
+            <ul align="left">
+              <li><a href="profile/sidebar.html">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="sidebar.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul align="left">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <table>
+                <tr>
+                    <td>
+                        <select id="select-gradebook">
+                            <option value="gradebook">Gradebook</option>
+                        </select>
+                        <button type="button">Import</button>
+                        <select id="export">
+                            <option value="export">export</option>
+                        </select>
+                        <button type="button">Configure</button>
+                    </td>
+                </tr>
+                <th>
+                    <h3 align="left">Student Names</h3>
+                </th>
+                <tr>
+                    <td>
+                        <input type="Student search"
+                        placeholder="Search Student"
+                        id="text-fields-students"/>
+                    </td>
+                </tr>
+                <th>
+                    <h3 align="left">Assignment Names</h3>
+                </th>
+                <tr>
+                    <td>
+                        <input type="assignment search"
+                        placeholder="Search Assignments"
+                        id="text-fields-assignments"/>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button">Apply Filters</button>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="1" width="100%" padding="1px">
+                        <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Assignment 1 <br>Out of 100</th>
+                            <th>Assignment 2 <br>Out of 100</th>
+                            <th>Assignment 3 <br>Out of 100</th>
+                            <th>Assignment 4 <br>Out of 100</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S1</td>
+                                <td align="center"><input style="text-align: center;" size="8" type="text" value="99" id="s1-assignment1-grade"></td>
+                                <td align="center">92</td>
+                                <td align="center">93</td>
+                                <td align="center">94</td>
+                            </tr>
+                            <tr>
+                                <td>S2</td>
+                                <td align="center">0</td>
+                                <td><input size="8" type="text" value="0" id="s2-assignment2-grade"></td>
+                                <td align="center">0</td>
+                                <td align="center"><input size="8" type="text" value="78" id="s2-assignment4-grade"></td>
+                            </tr>
+                            <tr>
+                                <td>S3</td>
+                                <td align="center">85</td>
+                                <td align="center">98</td>
+                                <td align="center"><input size="8" type="text" value="90" id="s3-assignment3-grade"></td>
+                                <td align="center">77</td>
+                            </tr>
+                            <tr>
+                                <td>S4</td>
+                                <td align="center">78</td>
+                                <td align="center">94</td>
+                                <td align="center">86</td>
+                                <td align="center">94</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+          </td>
+</body>
+</html>
