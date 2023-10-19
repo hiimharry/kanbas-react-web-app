@@ -2,7 +2,7 @@
     font-family: Lato;
 }
 
-.bold-text {
+#bootstrap-override .bold-text {
     font-weight: bold;
 }
 
@@ -11,14 +11,14 @@ a:visited, a:active, a:link {
     color:#d41b2c;
 }
 
-.sidebar{
+#bootstrap-override .sidebar{
     margin: 0;
     padding: 0;
     width: 75px;
     text-align: center;
 }
 
-.avatar {
+#bootstrap-override .avatar {
     overflow: hidden;
     border-radius: 100%;
     border: 2px solid gray;
@@ -29,7 +29,7 @@ a:visited, a:active, a:link {
     vertical-align: middle;
 }
 
-.avatar-nav{
+#bootstrap-override .avatar-nav{
     overflow: hidden;
     border-radius: 100%;
     border: 2px solid gray;
@@ -40,7 +40,7 @@ a:visited, a:active, a:link {
     vertical-align: middle;
 }
 
-.menu-item {
+#bootstrap-override .menu-item {
     box-sizing:content-box;
     display:table-cell;
     width:100%;
@@ -50,15 +50,15 @@ a:visited, a:active, a:link {
     margin:0;
 }
 
-.selected-menu-item {
+#bootstrap-override .selected-menu-item {
     background-color: white;
 }
 
-.selected-menu-text {
+#bootstrap-override .selected-menu-text {
     color:#d41b2c !important;
 }
 
-.menu-list {
+#bootstrap-override .menu-list {
     list-style-type: none;
     background-color: #000000;
     display: flex;
@@ -73,7 +73,7 @@ a:visited, a:active, a:link {
     padding:0;
 }
 
-.nav-menu-list {
+#bootstrap-override .nav-menu-list {
     list-style-type: none;
     background-color: #000000;
     display: flex;
@@ -86,33 +86,33 @@ a:visited, a:active, a:link {
     padding:0;
 }
 
-.asdf {
+#bootstrap-override .asdf {
     transform: translate3d(0, 0, 0);
     position: relative;
     z-index: 1;
     margin: 0 auto;
 }
 
-.menu-icon {
+#bootstrap-override .menu-icon {
     width: 26px;
     display: inline-block;
     fill:#d41b2c;
     vertical-align: middle;
 }
 
-.fa-icon {
+#bootstrap-override .fa-icon {
     color:#d41b2c;
     display: inline-block;
     vertical-align: middle;
 }
 
-.logo {
+#bootstrap-override .logo {
     text-align:center;
     height: 75px;
 
 }
 
-.menu-text {
+#bootstrap-override .menu-text {
     text-align:center;
     color:white;
     font-size: 14px;
@@ -121,42 +121,42 @@ a:visited, a:active, a:link {
 }
 
 
-.menu-text:hover{
+#bootstrap-override .menu-text:hover{
     text-decoration: none;
 }
 
-.option-list {
+#bootstrap-override .option-list {
     list-style-type: none;
     padding:0;
     margin:0;
 }
 
-.options {
+#bootstrap-override .options {
     min-width: 175px;
     max-width: 175px;
 }
 
-.option-text {
+#bootstrap-override .option-text {
     color:#d41b2c;
     padding:5px;
     text-decoration: none;
 }
 
-.option-text:hover {
+#bootstrap-override .option-text:hover {
     text-decoration: underline;
 }
 
-.option-text-selected {
+#bootstrap-override .option-text-selected {
     color: black !important;
     font-weight: bold;
 }
 
-.option-item-selected {
+#bootstrap-override .option-item-selected {
     border-left: 2px solid #2d3b45;
     border-radius: 0px;
 }
 
-.menu-link {
+#bootstrap-override .menu-link {
     position: relative;
     display: block;
     border-style: none;
@@ -165,26 +165,26 @@ a:visited, a:active, a:link {
     padding: 5px 0 5px 0;
 }
 
-.borgar {
+#bootstrap-override .borgar {
     max-width: 50px;
     padding:3px 0 3px 0;
     margin:0;
 }
 
-.profile-header {
+#bootstrap-override .profile-header {
     padding:20px 0px 20px 0px;
     margin-left:5px;
 }
 
-.profile-header-2{
+#bootstrap-override .profile-header-2{
     border-bottom: 1px solid #c7cdd1;
 }
 
-.header-text{
+#bootstrap-override .header-text{
     font-size:20px;
 }
 
-.profile-picture {
+#bootstrap-override .profile-picture {
     overflow: hidden;
     border-radius: 100%;
     border: 2px solid gray;
@@ -194,13 +194,13 @@ a:visited, a:active, a:link {
     vertical-align: middle;
 }
 
-.btn-border{
+#bootstrap-override .btn-border{
     border: 1px solid;
     border-color: #c7cdd1;
     border-radius: 3px;
 }
 
-.input-one-line {
+#bootstrap-override .input-one-line {
     width: 500px;
     height: 38px;
     display: block;
@@ -214,7 +214,7 @@ a:visited, a:active, a:link {
     outline-width: 12px;
 }
 
-.input-drop-down {
+#bootstrap-override .input-drop-down {
     width: 250px;
     height: 38px;
     display: block;
@@ -231,77 +231,77 @@ a:visited, a:active, a:link {
     outline-width: 12px;
 }
 
-.top-pad{
+#bootstrap-override .top-pad{
     padding-top:20px;
 }
 
-.center{
+#bootstrap-override .center{
     text-align: center;
 }
 
-.profile-footer{
+#bootstrap-override .profile-footer{
     margin-top:10px;
     padding-top: 10px;
     padding-bottom:20px;
     border-top: 1px solid #c7cdd1;
 }
 
-.dashboard-title {
+#bootstrap-override .dashboard-title {
     font-size: 32px;
     padding-left:0;
 }
 
-.dashboard-published {
+#bootstrap-override .dashboard-published {
     font-size: 24px;
 }
 
-.course {
+#bootstrap-override .course {
     width:270px;
     margin:15px 30px 15px 0;
 }
 
-.card-title{
+#bootstrap-override .card-title{
     overflow: hidden;
     text-overflow: ellipsis;
     color:#2d3b45;
     white-space: nowrap;
 }
 
-.card-body {
+#bootstrap-override .card-body {
     display: inline-block;
 }
 
-.card-text {
+#bootstrap-override .card-text {
     color:#677179;
 }
 
-.card-subtext {
+#bootstrap-override .card-subtext {
     color:#677179;
     font-size:12px;
 }
 
-.course-card-header-1 {
+#bootstrap-override .course-card-header-1 {
     box-sizing: border-box;
     height: 150px;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0, .1);
     background-color: rgb(37, 66, 132);
 }
 
-.course-card-header-2 {
+#bootstrap-override .course-card-header-2 {
     box-sizing: border-box;
     height: 150px;
     border: 1px solid rgba(0,0,0,.1);
     background-color: rgb(180, 20, 20);
 }
 
-.course-card-header-3 {
+#bootstrap-override .course-card-header-3 {
     box-sizing: border-box;
     height: 150px;
     border: 1px solid rgba(0,0,0,.1);
     background-color: rgb(225, 0, 255);
 }
 
-.course-header-button {
+#bootstrap-override .course-header-button {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -310,28 +310,28 @@ a:visited, a:active, a:link {
     border:none;
 }
 
-.module-header {
+#bootstrap-override .module-header {
     border-bottom: 1px solid #c7cdd1;
 }
 
-.top-bar {
+#bootstrap-override .top-bar {
     background:#000000;
     height:100px;
 }
 
-.navbar.navbar-inverse .navbar-header{
+#bootstrap-override .navbar#bootstrap-override .navbar-inverse #bootstrap-override .navbar-header{
     display: block;
     text-align:center;
     float: none;
 }
 
-.subtext {
+#bootstrap-override .subtext {
     font-size: 0.6875rem;
     overflow: hidden;
     text-overflow: ellipsis;
     color:#2d3b45;
 }
 
-.default-color {
+#bootstrap-override .default-color {
     color:#000000 !important;
 }
