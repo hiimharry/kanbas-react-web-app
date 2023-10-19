@@ -25,7 +25,7 @@ function Courses() {
                             <FontAwesomeIcon icon={faBars} className="fa-icon fa-lg"/>
                         </div>
                         <div class="header-text" style={{"padding-top": "2px"}}>
-                          <nav style={{"breadcrumb-divider": ">"}}  aria-label="breadcrumb">
+                          <nav className="breadcrumb-divide" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><Link to={`/Kanbas/Courses/${course._id}`}>{course.number}</Link></li>
                               {section.map((sec, index) =>
