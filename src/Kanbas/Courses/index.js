@@ -1,6 +1,5 @@
 import { useLocation, useParams } from "react-router";
 import CourseNavigation from "../CourseNavigation";
-import db from "../Database";
 import { Routes, Route, Link } from "react-router-dom";
 import Modules from "../Modules";
 import Home from "../Home";
@@ -11,11 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Grades from "../Grades";
 
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const section = useLocation()["pathname"].split("/").splice(4);
-  console.log(section);
   return (
     <div>
       <div className="row profile-header">

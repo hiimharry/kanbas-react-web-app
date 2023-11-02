@@ -1,4 +1,5 @@
 import ModuleList from "./ModuleList";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisV, faPlus, faCircleCheck} from '@fortawesome/free-solid-svg-icons'
 function Modules() {
