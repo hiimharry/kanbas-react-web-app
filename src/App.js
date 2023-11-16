@@ -7,7 +7,6 @@ import { HashRouter, Link } from "react-router-dom";
 import { Routes, Route, Navigate} from "react-router";
 
 function App() {
-  const screen = "labs";
   return (
     <HashRouter>
         <Routes>
