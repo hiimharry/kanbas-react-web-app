@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+const API_BASE = process.env.REACT_APP_LAB5_BASE;
 function EncodingParametersInURLs() {
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
@@ -7,16 +8,16 @@ function EncodingParametersInURLs() {
   const [result, setResult] = useState(0);
   const fetchSum = async (a, b) => {
     const response = await
-      axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+      axios.get(`${API_BASE}/add/${a}/${b}`);
     setResult(response.data);
   };
   const fetchSubtraction = async (a, b) => {
     const response = await axios.get(
-      `http://localhost:4000/a5/subtract/${a}/${b}`);
+      `${API_BASE}/subtract/${a}/${b}`);
     setResult(response.data);
   };
   const fetchWelcome = async () => {
-    const response = await axios.get("http://localhost:4000/a5/welcome");
+    const response = await axios.get("${API_BASE}/welcome");
     setWelcome(response.data);
   };
   useEffect(() => {
@@ -50,23 +51,23 @@ function EncodingParametersInURLs() {
       </button>
       <h3>Path Parameters</h3>
       <a
-        href={`http://localhost:4000/a5/add/${a}/${b}`}
+        href={`${API_BASE}/add/${a}/${b}`}
         className="btn btn-primary text-white">
         Add {a} + {b}
       </a>
       <a
-        href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+        href={`${API_BASE}/subtract/${a}/${b}`}
         className="btn btn-danger text-white">
         Substract {a} - {b}
       </a>
       <h3>Query Parameters</h3>
         <a
-        href={`http://localhost:4000/a5/calculator?operation=add&a=${a}&b=${b}`}
+        href={`${API_BASE}/calculator?operation=add&a=${a}&b=${b}`}
         className="btn btn-primary text-white">
         Add {a} + {b}
         </a>
         <a
-        href={`http://localhost:4000/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+        href={`${API_BASE}/calculator?operation=subtract&a=${a}&b=${b}`}
         className="btn btn-danger text-white">
         Substract {a} - {b}
         </a>

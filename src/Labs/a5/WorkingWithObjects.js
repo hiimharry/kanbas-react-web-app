@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const API_BASE = process.env.REACT_APP_LAB5_BASE;
 function WorkingWithObjects() {
   const [assignment, setAssignment] = useState({
     id: 1,
@@ -10,7 +11,7 @@ function WorkingWithObjects() {
     score: 0,
   });
   const [title, setTitle] = useState(assignment.title);
-  const URL = "http://localhost:4000/a5/assignment";
+  const URL = API_BASE + "/assignment";
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);
