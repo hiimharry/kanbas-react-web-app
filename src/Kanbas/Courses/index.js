@@ -14,6 +14,9 @@ function Courses({ courses }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   const section = useLocation()["pathname"].split("/").splice(4);
+  if (course == null) {
+    return <></>
+  }
   return (
     <div>
       <div className="row profile-header">

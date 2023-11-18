@@ -7,7 +7,7 @@ function Assignment5() {
       <div>
         <h1>Assignment 5</h1>
         <div className="list-group">
-          <a href={{API_BASE} + "/welcome"}
+          <a href={`${API_BASE}/welcome`}
              className="list-group-item">
             Welcome
           </a>
