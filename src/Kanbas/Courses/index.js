@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router";
+import { useLocation, useParams, Navigate } from "react-router";
 import CourseNavigation from "../CourseNavigation";
 import { Routes, Route, Link } from "react-router-dom";
 import Modules from "../Modules";
@@ -44,6 +44,7 @@ function Courses({ courses }) {
           <CourseNavigation />
           <div className="row col-sm-12 col-md-12 col-lg-12 col-xl-10 col-xxl-10 flex-fill">
           <Routes>
+            <Route path="/" element={<Navigate to="Home"/>}/>
             <Route path="Home" element={<Home />} />
             <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<Assignments />} />
