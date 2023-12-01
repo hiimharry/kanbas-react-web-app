@@ -17,7 +17,7 @@ function EncodingParametersInURLs() {
     setResult(response.data);
   };
   const fetchWelcome = async () => {
-    const response = await axios.get("${API_BASE}/welcome");
+    const response = await axios.get(`${API_BASE}/welcome`);
     setWelcome(response.data);
   };
   useEffect(() => {
