@@ -13,13 +13,14 @@ function Account() {
   };
   const signout = async () => {
     await client.signout();
-    navigate("/project/signin");
+    navigate("/Kanbas/signin");
   };
 
 
   useEffect(() => {
     fetchAccount();
   }, []);
+
   return (
     <div className="w-50">
       <h1>Account</h1>
@@ -55,7 +56,7 @@ function Account() {
     <button onClick={signout}>
     Signout
   </button>
-    <Link to="/admin/users" className="btn btn-warning w-100">
+    <Link to="Kanbas/admin/users" className="btn btn-warning w-100">
     Users
   </Link>
     </div>
