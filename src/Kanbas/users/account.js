@@ -1,6 +1,6 @@
 import * as client from "./client";
-import { useState, useEffect, Link } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
 function Account() {
   const [account, setAccount] = useState(null);
   const navigate = useNavigate();
