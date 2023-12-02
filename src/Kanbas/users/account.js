@@ -27,10 +27,10 @@ function Account() {
       <h1>Account</h1>
       {!account && (
         <div>
-          <Link to="/signup" className="btn btn-warning w-100">
+          <Link to="/Kanbas/signup" className="btn btn-warning w-100">
           Users
         </Link>
-          <Link to="/signin" className="btn btn-warning w-100">
+          <Link to="/Kanbas/signin" className="btn btn-warning w-100">
           Users
         </Link>
         </div>
@@ -67,7 +67,7 @@ function Account() {
     <button onClick={signout}>
     Signout
   </button>
-    <Link to="/admin/users" className="btn btn-warning w-100">
+    <Link to="/Kanbas/admin/users" className="btn btn-warning w-100">
     Users
   </Link>
     </div>
