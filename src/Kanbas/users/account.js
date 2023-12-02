@@ -28,10 +28,10 @@ function Account() {
       {account == null && (
         <div>
           <Link to="/Kanbas/signup" className="btn btn-warning w-100">
-          Users
+          Sign up
         </Link>
           <Link to="/Kanbas/signin" className="btn btn-warning w-100">
-          Users
+          Sign in
         </Link>
         </div>
       )}
@@ -59,14 +59,14 @@ function Account() {
             <option value="FACULTY">Faculty</option>
             <option value="STUDENT">Student</option>
           </select>
-        </div>
-      )}
-        <button onClick={save}>
+          <button onClick={save}>
         Save
     </button>
     <button onClick={signout}>
     Signout
   </button>
+        </div>
+      )}
     <Link to="/Kanbas/admin/users" className="btn btn-warning w-100">
     Users
   </Link>
