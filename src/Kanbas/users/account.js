@@ -1,6 +1,7 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import Signup from "./signup";
 function Account() {
   const [account, setAccount] = useState(null);
   const navigate = useNavigate();
@@ -24,6 +25,16 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
+      {!account && (
+        <div>
+          <Link to="/signup" className="btn btn-warning w-100">
+          Users
+        </Link>
+          <Link to="/signin" className="btn btn-warning w-100">
+          Users
+        </Link>
+        </div>
+      )}
       {account && (
         <div>
           <input value={account.password}
@@ -56,7 +67,7 @@ function Account() {
     <button onClick={signout}>
     Signout
   </button>
-    <Link to="Kanbas/admin/users" className="btn btn-warning w-100">
+    <Link to="/admin/users" className="btn btn-warning w-100">
     Users
   </Link>
     </div>
