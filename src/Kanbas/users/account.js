@@ -25,7 +25,7 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
-      {account == null && (
+      { (account == null || account == "") && (
         <div>
           <Link to="/Kanbas/signup" className="btn btn-warning w-100">
           Sign up
@@ -35,7 +35,7 @@ function Account() {
         </Link>
         </div>
       )}
-      {account != null && (
+      { (account != null && account != "") && (
         <div>
           <input value={account.password}
             onChange={(e) => setAccount({ ...account,

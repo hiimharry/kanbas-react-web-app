@@ -37,6 +37,7 @@ function WorkingWithArrays() {
       };
 
     useEffect(() => {
+      console.log(API_BASE);
       fetchTodos();
     }, []);
   

@@ -31,7 +31,7 @@ function Dashboard(  { courses, course, setCourse, addNewCourse,
         <button onClick={addNewCourse} >
         Add
       </button>
-      <button onClick={updateCourse} >
+      <button onClick={(event) => updateCourse(course)} >
         Update
       </button>
 

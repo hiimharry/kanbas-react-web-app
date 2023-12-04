@@ -45,10 +45,10 @@ function Kanbas() {
 
   const deleteCourse = async (course) => {
     const response = await axios.delete(
-      `${URL}/${course._id}`
+      `${URL}/${course}`
     );
     setCourses(courses.filter(
-      (c) => c._id !== course._id));
+      (c) => c._id !== course));
   };
 
   const updateCourse = async (course) => {

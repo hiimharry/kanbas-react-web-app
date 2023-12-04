@@ -15,13 +15,8 @@ function UserTable() {
       console.log(err);
     }
   };
-  const selectUser = async (user) => {
-    try {
-      const u = await client.findUserById(user._id);
-      setUser(u);
-    } catch (err) {
-      console.log(err);
-    }
+  const selectUser = (user) => {
+      setUser(user);
   };
   const updateUser = async () => {
     try {
@@ -77,6 +72,7 @@ function UserTable() {
             <td className="text-nowrap">
                 <BsFillCheckCircleFill onClick={updateUser}
                 className="me-2 text-success fs-1 text" />
+                
                 <BsPlusCircleFill onClick={createUser}
                 className="text-success fs-1 text" />
             </td>
@@ -93,7 +89,7 @@ function UserTable() {
                 <BsTrash3Fill onClick={() => deleteUser(user)} />
                 </button>
                 <button className="btn btn-warning me-2">
-                <BsPencil onClick={() => selectUser(user)} />
+                <BsPencil onClick={() => {selectUser(user)}} />
                 </button>
             </td>
             </tr>))}
